@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Emergia Davivienda</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center justify-content-evenly">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo.png" alt="">
+        <h1>Emergia Davivienda</h1>
+        <span>.</span>
+      </a>
+
+      <!-- Nav Menu -->
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#resultado-modelo" class="active">Fraude</a></li>
+          <li><a href="index.html#No-fraude">No fraude</a></li>
+          <li><a href="index.html#Empresas">Empresas</a></li>
+          <!-- <li class="dropdown has-dropdown"><a href="#"><span>Reporte descriptivo</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul class="dd-box-shadow">
+              <li><a href="#demografico">Demográfico</a></li>
+              <li><a href="#ventas">Ventas</a></li>
+            </ul>
+          </li> -->
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <!-- End Nav Menu -->
+
+      <a class="btn-getstarted" href="index.html#about">Cargar Excel</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- Hero Section - Home Page -->
+    <section id="hero" class="hero">
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- resultado-modelo - Home Page -->
+    <section id="resultado-modelo" class="services">
+
+      <!--  Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Reporte causa raíz</h2>
+        <p>Información procesada, clasificaciones, resúmenes o visualizaciones, que se derivan del procesamiento de los
+          datos proporcionados a través de la aplicación.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Total reclamos analizados</a></h4>
+                <H1>15.000</H1>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex">
+              <div class="container">
+                <div id="chart" class="chart-container row"></div>
+              </div>
+
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link"></a></h4>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-bag-check"></i></div>
+              <div>
+                <h4 class="title"><span href="#" class="stretched-link">Préstamos no solicitados</span>
+                </h4>
+                <canvas id="pieChart1" width="250" height="250" style="margin-top: 30px;"></canvas>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-phone"></i></div>
+              <div>
+                <h4 class="title"><span href="#" class="stretched-link">Transacciones desconocidas virtuales</span>
+                </h4>
+                <canvas id="pieChart2" width="250" height="250" style="margin-top: 30px;"></canvas>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-ban"></i></div>
+              <div>
+                <h4 class="title"><span href="#" class="stretched-link">Transacciones desconocidas TDC</span></h4>
+                <canvas id="pieChart3" width="250" height="250" style="margin-top: 30px;"></canvas>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-house"></i></div>
+              <div>
+                <h4 class="title"><span href="#" class="stretched-link">Intereses o saldos</span></h4>
+                <canvas id="pieChart4" width="250" height="250" style="margin-top: 30px;"></canvas>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-body-text"></i></div>
+              <div>
+                <h4 class="title"><span href="#" class="stretched-link">Cuentas bloqueadas</span></h4>
+                <canvas id="pieChart5" width="250" height="250" style="margin-top: 30px;"></canvas>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-hospital"></i></div>
+              <div>
+                <h4 class="title"><span href="#" class="stretched-link">Transferencia Daviplata</span></h4>
+                <canvas id="pieChart6" width="250" height="250" style="margin-top: 30px;"></canvas>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-cart-check"></i></div>
+              <div>
+                <h4 class="title"><span href="#" class="stretched-link">Pagos no aplicados</span></h4>
+                <canvas id="pieChart7" width="250" height="250" style="margin-top: 30px;"></canvas>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-flower1"></i></div>
+              <div>
+                <h4 class="title"><span href="#" class="stretched-link">Suplantación</span></h4>
+                <canvas id="pieChart8" width="250" height="250" style="margin-top: 30px;"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>Emergia Davivienda</span>
+          </a>
+          <p></p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://twitter.com/emergiacorp"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.facebook.com/emergiaColombia/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/emergia_colombia/?hl=es-la"><i class="bi bi-instagram"></i></a>
+            <a href="https://co.linkedin.com/company/emergia?trk=ppro_cprof"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p><span>Emergia.</span><strong class="px-1">Diseñado por</strong>Área de Analítica e inteligencia de
+        negocios<span></span></p>
+      <div class="credits">
+
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Scroll Top Button -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
